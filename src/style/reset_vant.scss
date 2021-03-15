@@ -1,0 +1,98 @@
+body {
+    .cus-popup {
+        width: 85%;
+        max-height: 90%;
+        overflow: hidden;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+
+        .pop-box {
+            flex: 1;
+            border-radius: 6px;
+            background-color: #1A274B;
+            overflow-y: auto;
+        }
+
+        .van-cell {
+            background-color: #1A274B;
+            color: #ffffff;
+        }
+        .van-cell::after {
+            border-bottom: 1px solid #999999;
+        }
+    }
+    .pup-2 {
+        width: 90%;
+        max-height: 90%;
+    }
+    .cus-popup-bottom {
+        background-color: #000000;
+    }
+    .van-button.br8 {
+        border-radius: 8px;
+    }
+    .van-button.br10 {
+        border-radius: 10px;
+    }
+    .van-button.br4 {
+        border-radius: 4px;
+    }
+    .van-button.br6 {
+        border-radius: 6px;
+    }
+    .van-button.br44 {
+        border-radius: 44px;
+    }
+    .van-button.h30 {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .van-button.disabled[disabled],
+    .van-button.btn2[disabled],
+    .van-button.btn3[disabled] {
+        opacity: 1;
+    }
+    .van-button--primary.btn2 {
+        background-color: #416D7A;
+        border-color: #416D7A;
+    }
+    .van-button--primary.btn3 {
+        background-color: #6F777E;
+        border-color: #6F777E;
+    }
+
+    .van-button--disabled.disabled {
+        //background-color: #939393;
+        //border-color: #939393;
+    }
+    .van-button--plain {
+        //background-color: #212121;
+    }
+
+    .van-dialog {
+        //background-color: #383838;
+    }
+    .van-dialog__header {
+        font-size: 18px;
+    }
+    .van-dialog__message--has-title {
+        //color: #ffffff;
+        padding-top: 20px;
+    }
+    .van-dialog__confirm {
+        //color: #ffffff;
+    }
+    .van-nav-bar {
+        //background-color: #161616;
+    }
+    .van-dialog__message {
+        color: #02040A;
+    }
+    .van-nav-bar .van-icon {
+        color: #ffffff;
+        font-size: 20px;
+    }
+}

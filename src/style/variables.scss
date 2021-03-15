@@ -1,0 +1,32 @@
+$fill-bg: #12171D;
+$fill-head-bg: #171D25;
+
+$def-font-color: #fff;
+$font-color-2: #E9EDF1;
+$font-color-3: #5A6876;
+$font-color-4: #12171D;
+
+$btn-color: #ECB816;
+$buy-color: #24B286;
+$sell-color: #F15B5A;
+
+$border-color: #1E2933;
+
+@mixin wh($w, $h: $w) {
+    width: $w + px;
+    height: $h + px;
+}
+// @include wh(10, 20)
+@mixin br($v) {
+    border-radius: $v + px;
+}
+
+@mixin bg($c) {
+    background-color: $c;
+}
+
+@mixin bd($w, $c, $s: solid) {
+    border-width: $w + px;
+    border-color: $c;
+    border-style: $s;
+}

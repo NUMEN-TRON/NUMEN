@@ -1,0 +1,167 @@
+
+.tl { text-align: left; }
+.tr { text-align: right; }
+.tc { text-align: center; }
+.tj { text-align: justify; }
+.t-break { word-break: break-all; }
+
+.block-tc { margin-left: auto; margin-right: auto; }
+
+.pf { position: fixed; }
+.pr { position: relative; }
+.pa { position: absolute; }
+.pa-def { position: absolute; top: 0; left: 0; }
+
+.pa-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.pa-center-x { position: absolute; left: 50%; transform: translateX(-50%); }
+.pa-center-y { position: absolute; top: 50%; transform: translateY(-50%); }
+
+
+.flex { display: flex; }
+.flex-1 { flex: 1; }
+.f-sk-0 { flex-shrink: 0; }
+.f-sk-1 { flex-shrink: 1; }
+.f-def { display: flex; justify-content: flex-start; }
+.f-c-def { display: flex; justify-content: flex-start; align-items: center }
+.f-sb { display: flex; justify-content: space-between }
+.f-c-sb { display: flex; align-items: center; justify-content: space-between }
+.f-ct { display: flex; align-items: center; justify-content: center }
+.f-column { display: flex; flex-direction: column; }
+.f-wrap { flex-wrap: wrap; }
+.align-start { align-items: flex-start; }
+.align-end { align-items: flex-end; }
+.align-center { align-items: center; }
+.self-start { align-self: flex-start; }
+.self-end { align-self: flex-end; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+.full-h { height: 100% }
+.min-full-h { min-height: 100% }
+.full-w { width: 100%; }
+.ofh { overflow: hidden; }
+.ofy { overflow-y: auto }
+
+.bb { box-sizing: border-box; }
+
+.br4 { border-radius: 4px; }
+.br6 { border-radius: 6px; }
+.br8 { border-radius: 8px; }
+.br10 { border-radius: 10px; }
+.br12 { border-radius: 12px; }
+.br15 { border-radius: 15px; }
+.br24 { border-radius: 24px; }
+.br-round { border-radius: 50%; }
+
+// 定义字体(px)单位，f10 - f36
+@for $i from 10 through 36 {
+    .f#{$i} {
+        font-size: $i + px;
+    }
+}
+// 定义flex布局，flex-1 - flex-24
+@for $i from 1 through 24 {
+    .flex-#{$i} {
+        flex: $i;
+    }
+}
+
+.fw400 { font-weight: 400; }
+.fw500 { font-weight: 500; }
+.fw600 { font-weight: 600; }
+.fw700 { font-weight: 700; }
+
+.w-14 { width: 14px; }
+.w-15 { width: 15px; }
+.w-16 { width: 16px;}
+.w-17 { width: 17px; }
+.w-18 { width: 18px; }
+.w-22 { width: 22px; }
+.w-23 { width: 23px; }
+.w-24 { width: 24px; }
+.w-43 { width: 43px; }
+.w-44 { width: 44px; }
+.w-45 { width: 45px; }
+.wh-48 { width: 48px; }
+.w-52 { width: 52px; }
+.w-54 { width: 54px; }
+.w-59 { width: 59px; }
+.w-138 { width: 138px; }
+
+.h-20 { height: 20px; }
+.h-23 { height: 23px; }
+.h-28 { height: 28px; }
+.h-30 { height: 30px; }
+.h-36 { height: 36px; }
+.h-42 { height: 42px; }
+.h-44 { height: 44px; }
+.h-50 { height: 50px; }
+.h-52 { height: 52px; }
+.h-56 { height: 56px; }
+.h-74 { height: 74px; }
+.h-80 { height: 80px; }
+.h-88 { height: 88px; }
+.h-89 { height: 89px; }
+.h-121 { height: 121px; }
+.h-180 { height: 180px; }
+
+.lh36 { line-height: 36px; }
+.lh2 { line-height: 1.8; }
+
+.px10 { padding-left: 10px; padding-right: 10px; }
+.px12 { padding-left: 12px; padding-right: 12px; }
+.px15 { padding-left: 15px; padding-right: 15px; }
+.px16 { padding-left: 16px; padding-right: 16px; }
+.px18 { padding-left: 18px; padding-right: 18px; }
+.px20 { padding-left: 20px; padding-right: 20px; }
+.px22 { padding-left: 22px; padding-right: 22px; }
+.px25 { padding-left: 25px; padding-right: 25px; }
+.px33 { padding-left: 33px; padding-right: 33px; }
+.py03 { padding-top: 3px; padding-bottom: 3px; }
+.py05 { padding-top: 5px; padding-bottom: 5px; }
+.py10 { padding-top: 10px; padding-bottom: 10px; }
+.py15 { padding-top: 15px; padding-bottom: 15px; }
+.py16 { padding-top: 16px; padding-bottom: 16px; }
+.py18 { padding-top: 18px; padding-bottom: 18px; }
+.py20 { padding-top: 20px; padding-bottom: 20px; }
+.py25 { padding-top: 25px; padding-bottom: 25px; }
+
+
+.mx15 { margin-left: 15px; margin-right: 15px; }
+.mx16 { margin-left: 16px; margin-right: 16px; }
+.mx17 { margin-left: 17px; margin-right: 17px; }
+.mx20 { margin-left: 20px; margin-right: 20px; }
+.mx23 { margin-left: 23px; margin-right: 23px; }
+.mx30 { margin-left: 30px; margin-right: 30px; }
+
+.my25 { margin-top: 25px; margin-bottom: 25px; }
+
+.mr05 { margin-right: 5px; }
+.mr08 { margin-right: 8px; }
+.mr10 { margin-right: 10px; }
+.mr15 { margin-right: 15px; }
+.mr17 { margin-right: 17px; }
+.mr20 { margin-right: 20px; }
+.mr25 { margin-right: 25px; }
+.mr30 { margin-right: 30px; }
+.mr60 { margin-right: 60px; }
+
+.mt05 { margin-top: 5px; }
+.mt08 { margin-top: 8px; }
+.mt10 { margin-top: 10px; }
+.mt14 { margin-top: 14px; }
+.mt16 { margin-top: 16px; }
+.mt20 { margin-top: 20px; }
+.mt25 { margin-top: 25px; }
+.mt30 { margin-top: 30px; }
+.mt35 { margin-top: 35px; }
+.mt40 { margin-top: 40px; }
+.mt50 { margin-top: 50px; }
+
+.mt-4 { margin-top: -4px; }
+
+.mb16 { margin-bottom: 16px; }
+
